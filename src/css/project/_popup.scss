@@ -1,0 +1,264 @@
+.popup-wrapper {
+  background-color: rgba(#000, 0.12);
+  height: 100%;
+  left: auto;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 0.3s;
+  width: 0;
+  z-index: 4;
+
+  &.is-open {
+    opacity: 1;
+    width: 100%;
+
+    .popup {
+      right: 24px;
+    }
+  }
+}
+
+.popup {
+  background-color: #fff;
+  height: calc(100% - 48px);
+  left: auto;
+  overflow-y: auto;
+  position: absolute;
+  padding: 60px 72px 0;
+  right: -744px;
+  top: 24px;
+  transition: right 0.5s;
+  width: 720px;
+
+  &__inner {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 41px;
+    margin-bottom: 36px;
+  }
+
+  &__buttons {
+    align-items: center;
+    display: flex;
+    margin-top: 36px;
+
+    &--1_button {
+      justify-content: flex-end;
+    }
+
+    &--2_buttons {
+      justify-content: space-between;
+    }
+
+    &--1_button_center {
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    font-weight: 500;
+    height: 48px;
+  }
+}
+
+.steps {
+  align-items: center;
+  display: flex;
+  margin-bottom: 36px;
+  overflow: hidden;
+
+  &__button {
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: 48px;
+
+    & + & {
+      margin-left: -12px;
+    }
+
+    &:nth-child(1) {
+      z-index: 5;
+    }
+
+    &:nth-child(2) {
+      z-index: 4;
+    }
+
+    &:nth-child(3) {
+      z-index: 3;
+    }
+
+    &:nth-child(4) {
+      z-index: 2;
+    }
+
+    &:nth-child(5) {
+      z-index: 1;
+    }
+
+    &:last-child {
+      &::after {
+        border-top: 1px solid rgba(#979797, 0.24);
+        content: '';
+        left: auto;
+        position: absolute;
+        pointer-events: none;
+        right: -700px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 700px;
+      }
+    }
+
+    &.current {
+      background-color: #f5adcd;
+      border-color: #f5adcd;
+      color: #fff;
+      cursor: default;
+      margin-right: 24px;
+      margin-left: 12px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &.finished-step {
+      z-index: 1;
+    }
+  }
+}
+
+.popup-form {
+  &__row {
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__cell {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 3 * 2);
+
+    &--small {
+      min-width: 200px;
+      width: calc(100% / 3);
+    }
+  }
+}
+
+.required {
+  color: $brandcolor;
+}
+
+.company-reqisites {
+  margin-bottom: 36px;
+}
+
+.popup-form2 {
+  background-color: #f7f7f7;
+  margin-left: -48px;
+  margin-right: -48px;
+  padding: 36px 48px;
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0;
+    margin-bottom: 18px;
+    margin-top: 0;
+  }
+
+  &__row {
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+
+    &--2_cell {
+      margin-left: -24px;
+      margin-right: -24px;
+    }
+  }
+
+  &__cell {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 50%;
+
+    &--small {
+      min-width: 200px;
+      padding-left: 12px;
+      padding-right: 12px;
+      width: calc(100% / 3);
+    }
+  }
+
+  .input,
+  .textarea {
+    background-color: transparent;
+  }
+}
+
+.next-button {
+  background-image: linear-gradient(to left, #ed028d, #04adef);
+  color: #fff;
+  justify-content: space-between;
+  min-width: 200px;
+  padding: 0 12px 0 24px;
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(to left, #04adef, #ed028d);
+  }
+
+  &__icon {
+    fill: rgba(#fff, 0.65);
+    height: 24px;
+    margin-left: 16px;
+    width: 24px;
+  }
+}
+
+.prev-button {
+  background-color: #efefef;
+  justify-content: center;
+  transition: background-color 0.3s;
+  width: 48px;
+
+  &:hover,
+  &:focus {
+    background-color: darken(#efefef, 5%);
+  }
+
+  &__icon {
+    fill: rgba(#000, 0.65);
+    height: 24px;
+    width: 24px;
+  }
+}

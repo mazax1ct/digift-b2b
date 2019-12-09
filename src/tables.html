@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Таблицы</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  <div class="wrapper">
+    //= template/header.html
+
+    //= template/side-bar.html
+
+    <main class="content">
+      <div class="tables">
+        <div class="table-wrapper table-wrapper--requests">
+          <p class="table-title table-title--requests">
+            Новые заявки
+            <span class="table-title__counter">2</span>
+          </p>
+          <table class="table">
+            <tr>
+              <th class="table__date-cell">Дата</th>
+              <th>Город</th>
+              <th>Юр. лицо</th>
+              <th>Стоимость</th>
+              <th>Кол-во</th>
+              <th>Комментарий</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="table__date-cell">
+                19.09.19
+                <span class="table__time">13:45</span>
+              </td>
+              <td>Санкт-Петербург</td>
+              <td>
+                <span class="table__company">ООО «Бренд одежды фешн дизайн»</span>
+                <div class="table__buttons">
+                  <button class="table__button" type="button">Александр</button>
+                  <button class="table__button" type="button">+7 (916) 313-64-30</button>
+                  <button class="table__button" type="button">hello@sorokins.me</button>
+                </div>
+              </td>
+              <td class="nowrap">1 000 руб.</td>
+              <td class="nowrap">200</td>
+              <td>Тестовая карта</td>
+              <td><img src="images/icons/doc.svg" alt="Файл" title="Файл загружен"></td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">
+                18.09.19
+                <span class="table__time">20:16</span>
+              </td>
+              <td>Екатеринбург</td>
+              <td>
+                <span class="table__company">ООО «Ленвендо»</span>
+                <div class="table__buttons">
+                  <button class="table__button" type="button">Ева</button>
+                  <button class="table__button" type="button">+7 800 824-20-11</button>
+                  <button class="table__button" type="button">hello@mail.ru</button>
+                </div>
+              </td>
+              <td class="nowrap">5 000 руб.</td>
+              <td>100</td>
+              <td>Уже готовимся презентовать в...</td>
+              <td>
+                <p class="attention">! <span class="attention__tooltip">Клиент не загрузил файл с данными заказа</span></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-wrapper">
+          <p class="table-title table-title--process">
+            Оформление заказа (Digift)
+            <span class="table-title__counter">1</span>
+          </p>
+          <table class="table">
+            <tr>
+              <th class="table__date-cell">Дата</th>
+              <th class="table__company-cell">Юр. лицо</th>
+              <th>Номер</th>
+              <th class="table__cost-cell">Стоимость</th>
+              <th class="table__manager-cell">Менеджер</th>
+              <th class="table__comment-cell">Комментарий</th>
+            </tr>
+            <tr>
+              <td class="table__date-cell">19.09.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «РокетБанк»</span></td>
+              <td>72487194</td>
+              <td class="table__cost-cell">1 000 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_1">Б</span>
+                  Богданова Е.О.
+                </p>
+              </td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">11.08.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «Бренд одежды фешн стайл дизайн»</span></td>
+              <td>08149134</td>
+              <td class="table__cost-cell">5 000 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_2">К</span>
+                  Красильников М.В.
+                </p>
+              </td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">24.07.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «ЮиксЛайв»</span></td>
+              <td>20825285</td>
+              <td class="table__cost-cell">20 000 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_3">Р</span>
+                  Райкин А.О.
+                </p>
+              </td>
+              <td class="table__comment-cell">Все ок 👌🏻</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-wrapper">
+          <p class="table-title table-title--orders">
+            Завершенные заказы
+            <span class="table-title__counter">29</span>
+          </p>
+          <table class="table">
+            <tr>
+              <th class="table__date-cell">Дата</th>
+              <th class="table__company-cell">Юр. лицо</th>
+              <th>Номер</th>
+              <th class="table__cost-cell">Стоимость</th>
+              <th class="table__manager-cell">Менеджер</th>
+              <th class="table__comment-cell">Комментарий</th>
+            </tr>
+            <tr>
+              <td class="table__date-cell">29.08.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «Пуфики РФ»</span></td>
+              <td>07247225</td>
+              <td class="table__cost-cell">1 500 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_4">К</span>
+                  Куприянов В.В.
+                </p>
+              </td>
+              <td class="table__comment-cell">Проверил, оформил</td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">23.08.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «СтеклаПовсюду»</span></td>
+              <td>92975251</td>
+              <td class="table__cost-cell">3 900 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_5">М</span>
+                  Мельников Н.А.
+                </p>
+              </td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-wrapper">
+          <p class="table-title table-title--cancels">
+            Отмененные заявки
+            <span class="table-title__counter">210</span>
+          </p>
+          <table class="table">
+            <tr>
+              <th class="table__date-cell">Дата</th>
+              <th class="table__company-cell">Юр. лицо</th>
+              <th>Номер</th>
+              <th class="table__cost-cell">Стоимость</th>
+              <th class="table__manager-cell"></th>
+              <th class="table__comment-cell">Комментарий</th>
+            </tr>
+            <tr>
+              <td class="table__date-cell">01.02.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «Космополитан»</span></td>
+              <td>98247257</td>
+              <td class="table__cost-cell">10 500 руб.</td>
+              <td class="table__manager-cell"></td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">30.01.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «Витязи Здесь»</span></td>
+              <td>27892455</td>
+              <td class="table__cost-cell">7 000 руб.</td>
+              <td class="table__manager-cell"></td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    //= template/popup.html
+  </div>
+
+
+  //= template/scripts.html
+</body>
+
+</html>

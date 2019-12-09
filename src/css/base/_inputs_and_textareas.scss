@@ -1,0 +1,136 @@
+.input-label {
+  display: block;
+  position: relative;
+
+  &__label {
+    color: $textcolor;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    text-overflow: ellipsis;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .input {
+    &:focus,
+    &.focus {
+      & + .input-label__label {
+        color: #7d7d7d;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 0.26px;
+        top: 8px;
+
+        .required {
+          color: #7d7d7d;
+        }
+      }
+    }
+  }
+
+  .textarea {
+    & + .input-label__label {
+      top: 24px;
+      transform: none;
+    }
+
+    &:focus,
+    &.focus {
+      & + .input-label__label {
+        color: rgba(#414141, 0.5);
+        font-size: 8px;
+        top: 6px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &.filled {
+    .input {
+      border-color: $brandcolor;
+      box-shadow: 0 1px 0 0 $brandcolor;
+      background-color: #fff;
+
+      & +.input-label__label {
+        color: #7d7d7d;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 0.26px;
+        top: 8px;
+
+        .required {
+          color: #7d7d7d;
+        }
+      }
+    }
+
+    .textarea {
+      background-color: #fff;
+      border-color: #223D72;
+
+      & + .input-label__label {
+        color: rgba(#414141, 0.5);
+        font-size: 8px;
+        top: 6px;
+        transform: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.input,
+.textarea {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid rgba(#000, 0.12);
+  border-radius: 0;
+  box-shadow: 0 1px 0 0 transparent;
+  color: $textcolor;
+  font-weight: 500;
+  line-height: 15px;
+  transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+
+  &:focus {
+    border-color: $brandcolor;
+    box-shadow: 0 1px 0 0 $brandcolor;
+    background-color: #fff;
+  }
+
+  &.error {
+    border-color: #B12931 !important;
+
+    &:focus {
+      border-color: #B12931 !important;
+    }
+  }
+
+  &:disabled {
+    background-color: #EDEDED;
+    border-color: #EDEDED;
+
+    & + .input-label__label {
+      opacity: 0.3;
+    }
+  }
+}
+
+.input {
+  min-height: 54px;
+  padding: 19px 0 13px;
+}
+
+.textarea {
+  height: 100px;
+  padding: 24px 18px 14px;
+  resize: none;
+}

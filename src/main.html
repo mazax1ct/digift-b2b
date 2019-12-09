@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Главная</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  <div class="wrapper">
+    //= template/header.html
+
+    //= template/side-bar.html
+
+    <main class="content">
+      <div class="intro-block">
+        <h1 class="intro-block__title">Заказы</h1>
+        <div class="intro-block__buttons">
+          <a class="intro-button" href="tables.html">
+            <span class="intro-button__icon-block intro-button__icon-block--brand_color">
+              <svg class="intro-button__icon" aria-hidden="true">
+                <use xlink:href="#arrow-right" />
+              </svg>
+            </span>
+            <span>Показать все</span>
+          </a>
+          <button class="js-popup-opener intro-button" type="button">
+            <span>Создать заявку</span>
+            <span class="intro-button__icon-block">
+              <svg class="intro-button__icon" aria-hidden="true">
+                <use xlink:href="#plus" />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="intro-block__links">
+          <div class="intro-block__link">
+            <a class="intro-link intro-link--requests" href="#">
+              <span class="intro-link__counter">24</span>
+              <span class="intro-link__icon-block">
+                <svg class="intro-link__icon" aria-hidden="true">
+                  <use xlink:href="#requests-icon" />
+                </svg>
+              </span>
+              <span class="intro-link__title">Заявки</span>
+            </a>
+          </div>
+          <div class="intro-block__link">
+            <a class="intro-link intro-link--process" href="#">
+              <span class="intro-link__icon-block">
+                <svg class="intro-link__icon" aria-hidden="true">
+                  <use xlink:href="#process-icon" />
+                </svg>
+              </span>
+              <span class="intro-link__title">Оформление</span>
+            </a>
+          </div>
+          <div class="intro-block__link">
+            <a class="intro-link intro-link--orders" href="#">
+              <span class="intro-link__counter">129</span>
+              <span class="intro-link__icon-block">
+                <svg class="intro-link__icon" aria-hidden="true">
+                  <use xlink:href="#order-icon" />
+                </svg>
+              </span>
+              <span class="intro-link__title">Заказы</span>
+            </a>
+          </div>
+          <div class="intro-block__link">
+            <a class="intro-link intro-link--cancels" href="#">
+              <span class="intro-link__icon-block">
+                <svg class="intro-link__icon" aria-hidden="true">
+                  <use xlink:href="#cancel-icon" />
+                </svg>
+              </span>
+              <span class="intro-link__title">Отмены</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    //= template/popup.html
+  </div>
+
+
+  //= template/scripts.html
+</body>
+
+</html>

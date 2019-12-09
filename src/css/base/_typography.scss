@@ -1,0 +1,43 @@
+body {
+  color: $textcolor;
+  font-family: 'Gotham Pro', Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  font-weight: 500;
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+  text-align: left;
+  width: 100%;
+
+  th,
+  td {
+    border: none;
+    border-bottom: 1px solid;
+    padding: 10px;
+    vertical-align: top;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: 'Gotham Pro', Arial, sans-serif;
+}
