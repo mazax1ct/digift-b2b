@@ -1,3 +1,5 @@
+var customScroll;
+
 //выпадающее меню пользователя
 $(document).on('click', '.js-user', function () {
   $('.user').addClass('is-open');
@@ -49,12 +51,6 @@ function arrayRandElement(arr) {
 
 var arr = ['color_1', 'color_2', 'color_3', 'color_4', 'color_5', 'color_6'];
 
-window.onload = function() {
-  var colorClass = arrayRandElement(arr);
-  var userIcon = document.querySelector('.user__icon');
-  userIcon.classList.add(colorClass);
-};
-
 //открытие попапа
 $(document).on('click', '.js-popup-opener', function () {
   $('body').addClass('overflow');
@@ -81,13 +77,6 @@ var onPopupEscPress = function (evt) {
   }
 };
 
-//проверка на пустоту поля ввода при загрузке страницы
-$('.js-input').each(function() {
-  if($(this).val()) {
-    $(this).parent('.input-label').addClass('filled');
-  }
-});
-
 //проверка на пустоту поля ввода
 $('.js-input').blur(function () {
   if($(this).val()) {
@@ -96,3 +85,61 @@ $('.js-input').blur(function () {
     $(this).parent('.input-label').removeClass('filled');
   }
 });
+
+//выпадающие списки автокомплита в инпутах номиналов
+var pars = [
+  "1000 руб.",
+  "2000 руб.",
+  "3000 руб.",
+  "4000 руб.",
+  "5000 руб.",
+  "6000 руб."
+];
+
+$(".js-par").each(function () {
+  $(this).autocomplete({
+    source: pars,
+    minLength: 0,
+    open: function( event, ui ) {
+      $(this).parent().addClass('focus');
+      //инициализация кастомного скрола
+      var menu = $(this).parent().find('.ui-menu')[0];
+      if(!menu.classList.contains('ps')) {
+        customScroll = new PerfectScrollbar(menu, {
+          wheelSpeed: 2,
+          wheelPropagation: true,
+          minScrollbarLength: 20
+        });
+      } else {
+        customScroll.update();
+      }
+    },
+    close: function( event, ui ) {
+      $(this).parent().removeClass('focus');
+      customScroll.destroy();
+    }
+  })
+  .focus(function() {
+    $(this).autocomplete('search', '');
+  });
+});
+
+//фикс для возможности перевыбора номинала в списке авокомплита
+$(document).on('click', '.ui-menu-item-wrapper', function () {
+  $('.js-par').blur();
+  return false;
+});
+
+window.onload = function() {
+  //случайный цвет из массива для блока пользователя
+  var colorClass = arrayRandElement(arr);
+  var userIcon = document.querySelector('.user__icon');
+  userIcon.classList.add(colorClass);
+
+  //проверка на пустоту поля ввода при загрузке страницы
+  $('.js-input').each(function() {
+    if($(this).val()) {
+      $(this).parent('.input-label').addClass('filled');
+    }
+  });
+}

@@ -40,4 +40,8 @@ input,
 textarea,
 select {
   font-family: 'Gotham Pro', Arial, sans-serif;
+
+  &:focus {
+    outline: none;
+  }
 }
