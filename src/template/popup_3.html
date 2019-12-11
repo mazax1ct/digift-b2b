@@ -1,0 +1,94 @@
+<div class="popup-wrapper is-open">
+  <form class="popup" action="/" method="post">
+    <div class="popup__inner">
+      <div class="steps">
+        <button class="steps__button finished-step" type="button">1</button>
+        <button class="steps__button finished-step" type="button">2</button>
+        <button class="steps__button current" type="button">3</button>
+        <button class="steps__button" type="button">4</button>
+        <button class="steps__button" type="button">5</button>
+      </div>
+      <p class="popup__title">ООО «Бренд одежды фешн стайл дизайн»</p>
+      <div class="popup__contacts">
+        <p class="popup__contact">Валерий</p>
+        <p class="popup__contact">hello@mail.ru</p>
+      </div>
+      <table class="total-table">
+        <colgroup>
+          <col width="34.6%">
+          <col width="45%">
+          <col>
+        </colgroup>
+        <tr>
+          <th class="total-table__th">Номинал</th>
+          <th class="total-table__th">Кол-во</th>
+          <th class="total-table__th">Cтоимость</th>
+        </tr>
+        <tr>
+          <td class="total-table__td">500 руб.</td>
+          <td class="total-table__td">6</td>
+          <td class="total-table__td">3 000 руб.</td>
+        </tr>
+        <tr>
+          <td class="total-table__td">1 000 руб.</td>
+          <td class="total-table__td">3</td>
+          <td class="total-table__td">2 900 руб.</td>
+        </tr>
+        <tr>
+          <td class="total-table__td">2 000 руб.</td>
+          <td class="total-table__td">1</td>
+          <td class="total-table__td">2 000 руб.</td>
+        </tr>
+        <tr>
+          <td class="total-table__td">10 000 руб.</td>
+          <td class="total-table__td">2</td>
+          <td class="total-table__td">20 000 руб.</td>
+        </tr>
+        <tr>
+          <td class="total-table__td total-table__qnt-title" colspan="2">Итого количество</td>
+          <td class="total-table__td total-table__qnt">12</td>
+        </tr>
+        <tr>
+          <td class="total-table__td total-table__precost-title" colspan="2">Предварительная стоимость</td>
+          <td class="total-table__td total-table__precost">25 900 руб.</td>
+        </tr>
+      </table>
+      <div class="popup-form2">
+        <div class="popup-form2__row">
+          <div class="popup-form2__cell">
+            <label class="input-label input-label--big_text" for="order_num">
+              <input id="order_num" class="js-input input editable" type="text" name="order_num" value="" />
+              <span class="input-label__label">Номер заказа</span>
+            </label>
+          </div>
+          <div class="popup-form2__cell">
+            <label class="input-label input-label--big_text" for="discount">
+              <input id="discount" class="js-input input valid" type="text" name="discount" value="Скидка -20%" />
+              <span class="input-label__label">Ввести скидку</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="total-block">
+        <div class="total-block__block">
+          <p class="total-block__title">Итоговая стоимость</p>
+          <p class="total-block__summ total-block__summ--cost">20 720 руб.</p>
+        </div>
+      </div>
+      <div class="popup__buttons popup__buttons--2_buttons">
+        <button class="popup__button cancel-button" type="button">
+          Отменить заявку
+          <svg class="cancel-button__icon" aria-hidden="true">
+            <use xlink:href="#close-delete" />
+          </svg>
+        </button>
+        <button class="popup__button next-button" type="button">
+          Далее
+          <svg class="next-button__icon" aria-hidden="true">
+            <use xlink:href="#arrow-next" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

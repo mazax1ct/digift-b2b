@@ -24,9 +24,9 @@
   background-color: #fff;
   height: calc(100% - 48px);
   left: auto;
+  overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
-  padding: 60px 72px 0;
   right: -744px;
   top: 24px;
   transition: right 0.5s;
@@ -34,6 +34,26 @@
 
   &__inner {
     margin-bottom: 60px;
+    padding: 60px 72px 0;
+
+    &--grats {
+      background: url('../images/balloons.png') no-repeat 0 0 / 100% auto #fff;
+      padding-top: 160px;
+
+      .popup__title {
+        margin-top: 0;
+        margin-bottom: 42px;
+        text-align: center;
+      }
+
+      .popup__buttons {
+        margin-top: 42px;
+      }
+
+      .tile-button {
+        min-height: 167px;
+      }
+    }
   }
 
   &__title {
@@ -44,6 +64,38 @@
     & + .contacts-buttons {
       margin-top: -26px;
     }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  &__contact {
+    align-items: center;
+    border: 1px solid rgba(#000, 0.12);
+    border-radius: 19px;
+    color: rgba($textcolor, 0.8);
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    height: 38px;
+    justify-content: center;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    margin-top: 0;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 0 18px;
+  }
+
+  &__order-num {
+    color: rgba($textcolor, 0.65);
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 36px;
+    margin-top: -30px;
   }
 
   &__buttons {
@@ -72,6 +124,7 @@
     display: flex;
     font-weight: 500;
     height: 48px;
+    text-decoration: none;
   }
 }
 
@@ -79,7 +132,6 @@
   align-items: center;
   display: flex;
   margin-bottom: 36px;
-  overflow: hidden;
 
   &__button {
     align-items: center;
@@ -404,38 +456,6 @@
   }
 }
 
-.contacts-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-.contacts-button {
-  align-items: center;
-  border: 1px solid rgba(#000, 0.12);
-  background-color: transparent;
-  border-radius: 19px;
-  color: rgba($textcolor, 0.8);
-  cursor: pointer;
-  display: flex;
-  font-size: 15px;
-  font-weight: 400;
-  height: 38px;
-  justify-content: center;
-  line-height: 18px;
-  letter-spacing: 0.3px;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  padding: 0 18px;
-  transition: background-color 0.3s;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    background-color: rgba(#000, 0.12);
-  }
-}
-
 .total-table {
   line-height: 1;
   margin-bottom: 36px;
@@ -500,10 +520,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: 36px;
-  padding-bottom: 36px;
+  padding-bottom: 24px;
 
   &--top_border {
     border-top: 1px dashed rgba(#000, 0.12);
+    padding-top: 24px;
   }
 
   &__block {
@@ -517,13 +538,17 @@
     margin-bottom: 6px;
   }
 
-  &__cost {
-    color: $brandcolor;
+  &__summ {
     font-size: 36px;
-    font-weight: 500;
     line-height: 41px;
+    letter-spacing: 0;
     margin-top: 0;
     margin-bottom: 0;
+
+    &--cost {
+      color: $brandcolor;
+      font-weight: 500;
+    }
   }
 }
 

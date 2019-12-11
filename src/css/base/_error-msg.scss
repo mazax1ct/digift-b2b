@@ -1,0 +1,41 @@
+.error-msg {
+  background-color: #c40119;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.62;
+  left: 0;
+  min-height: 60px;
+  position: fixed;
+  padding: 17px 66px;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 5;
+
+  &__close {
+    align-items: center;
+    background-color: #c40119;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    left: auto;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+  }
+
+  &__close-icon {
+    fill: #fff;
+    height: 16px;
+    width: 16px;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

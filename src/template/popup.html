@@ -1,6 +1,6 @@
-<div class="popup-wrapper is-open">
+<div class="popup-wrapper">
   <form class="popup" action="/" method="post">
-    <div class="popup__inner" style="display: none">
+    <div class="popup__inner">
       <div class="steps">
         <button class="steps__button current" type="button">1</button>
         <button class="steps__button" type="button">2</button>
@@ -27,7 +27,7 @@
         <div class="popup-form__row">
           <div class="popup-form__cell popup-form__cell--small">
             <label class="input-label" for="kpp">
-              <input id="kpp" class="js-input input" type="text" name="kpp" value="" />
+              <input id="kpp" class="js-input input error" type="text" name="kpp" value="Ошибка" />
               <span class="input-label__label">КПП</span>
             </label>
           </div>
@@ -98,9 +98,10 @@
       <div class="popup-form popup-form--pars">
         <div class="popup-form__row">
           <div class="popup-form__cell popup-form__cell--small">
-            <label class="input-label ui-front" for="par">
-              <input id="par" class="js-input js-par input" type="text" name="par" value="" />
+            <label class="input-label input-label--double_label ui-front" for="par">
+              <input id="par" class="js-input js-par input error" type="text" name="par" value="" placeholder="от 0 до 120 000" />
               <span class="input-label__label">Номинал</span>
+              <span class="input-label__second-label">Свой номинал</span>
             </label>
           </div>
           <div class="popup-form__cell popup-form__cell--small">
@@ -129,9 +130,10 @@
         </div>
         <div class="popup-form__row">
           <div class="popup-form__cell popup-form__cell--small">
-            <label class="input-label ui-front" for="par">
-              <input id="par" class="js-input js-par input" type="text" name="par" value="1000 руб." />
+            <label class="input-label input-label--double_label ui-front" for="par">
+              <input id="par" class="js-input js-par input" type="text" name="par" value="1000 руб." placeholder="от 0 до 120 000" />
               <span class="input-label__label">Номинал</span>
+              <span class="input-label__second-label">Свой номинал</span>
             </label>
           </div>
           <div class="popup-form__cell popup-form__cell--small">
@@ -160,9 +162,10 @@
         </div>
         <div class="popup-form__row">
           <div class="popup-form__cell popup-form__cell--small">
-            <label class="input-label ui-front" for="par">
-              <input id="par" class="js-input js-par input" type="text" name="par" value="" />
+            <label class="input-label input-label--double_label ui-front" for="par">
+              <input id="par" class="js-input js-par input" type="text" name="par" value="" placeholder="от 0 до 120 000" />
               <span class="input-label__label">Номинал</span>
+              <span class="input-label__second-label">Свой номинал</span>
             </label>
           </div>
           <div class="popup-form__cell popup-form__cell--small">
@@ -211,9 +214,9 @@
         <button class="steps__button" type="button">5</button>
       </div>
       <p class="popup__title">ООО «Бренд одежды фешн стайл дизайн»</p>
-      <div class="contacts-buttons">
-        <a class="contacts-button" href="#">Валерий</a>
-        <a class="contacts-button" href="#">hello@mail.ru</a>
+      <div class="popup__contacts">
+        <p class="popup__contact">Валерий</p>
+        <p class="popup__contact">hello@mail.ru</p>
       </div>
       <table class="total-table">
         <colgroup>
@@ -274,7 +277,7 @@
       <div class="total-block">
         <div class="total-block__block">
           <p class="total-block__title">Итоговая стоимость</p>
-          <p class="total-block__cost">20 720 руб.</p>
+          <p class="total-block__summ total-block__summ--cost">20 720 руб.</p>
         </div>
       </div>
       <div class="popup__buttons popup__buttons--2_buttons">
@@ -293,7 +296,7 @@
       </div>
     </div>
 
-    <div class="popup__inner">
+    <div class="popup__inner" style="display: none">
       <div class="steps">
         <button class="steps__button finished-step" type="button">1</button>
         <button class="steps__button finished-step" type="button">2</button>
@@ -344,6 +347,96 @@
             <use xlink:href="#arrow-next" />
           </svg>
         </button>
+      </div>
+    </div>
+
+    <div class="popup__inner" style="display: none">
+      <div class="steps">
+        <button class="steps__button finished-step" type="button">1</button>
+        <button class="steps__button finished-step" type="button">2</button>
+        <button class="steps__button finished-step" type="button">3</button>
+        <button class="steps__button finished-step" type="button">4</button>
+        <button class="steps__button current" type="button">5</button>
+      </div>
+      <p class="popup__title">Итого</p>
+      <p class="popup__order-num">По заказу №1938481</p>
+      <table class="total-table">
+        <colgroup>
+          <col width="34.6%">
+          <col width="45%">
+          <col>
+        </colgroup>
+        <tr>
+          <th class="total-table__th">Номинал</th>
+          <th class="total-table__th">Кол-во</th>
+          <th class="total-table__th">Cтоимость</th>
+        </tr>
+        <tr>
+          <td class="total-table__td">1 500 руб.</td>
+          <td class="total-table__td">17</td>
+          <td class="total-table__td">25 500 руб.</td>
+        </tr>
+        <tr>
+          <td class="total-table__td total-table__qnt-title" colspan="2">Итого количество</td>
+          <td class="total-table__td total-table__qnt">17</td>
+        </tr>
+        <tr>
+          <td class="total-table__td total-table__precost-title" colspan="2">Предварительная стоимость</td>
+          <td class="total-table__td total-table__precost">25 500 руб.</td>
+        </tr>
+      </table>
+      <div class="total-block total-block--top_border">
+        <div class="total-block__block">
+          <p class="total-block__title">Скидка –20%</p>
+          <p class="total-block__summ">5000 руб.</p>
+        </div>
+        <div class="total-block__block">
+          <p class="total-block__title">Итоговая стоимость</p>
+          <p class="total-block__summ total-block__summ--cost">20 720 руб.</p>
+        </div>
+      </div>
+      <div class="popup__buttons popup__buttons--2_buttons">
+        <button class="popup__button prev-button" type="button" title="Назад">
+          <svg class="prev-button__icon" aria-hidden="true">
+            <use xlink:href="#arrow-prev" />
+          </svg>
+        </button>
+        <button class="popup__button next-button" type="button">
+          Далее
+          <svg class="next-button__icon" aria-hidden="true">
+            <use xlink:href="#arrow-next" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="popup__inner" style="display: none">
+      <p class="popup__title">Заказ<br> успешно<br> оформлен</p>
+      <div class="tiles">
+        <div class="tiles__item tiles__item--small">
+          <a class="tile-button tile-button--var_1" href="#">
+            <svg class="tile-button__image" aria-hidden="true">
+              <use xlink:href="#download" />
+            </svg>
+            <span class="tile-button__text">Скачать реестр<br> с картами</span>
+          </a>
+        </div>
+        <div class="tiles__item tiles__item--small">
+          <a class="tile-button tile-button--var_2" href="#">
+            <svg class="tile-button__image" aria-hidden="true">
+              <use xlink:href="#download" />
+            </svg>
+            <span class="tile-button__text">Скачать<br> документ</span>
+          </a>
+        </div>
+      </div>
+      <div class="popup__buttons popup__buttons--1_button_center">
+        <a class="popup__button next-button" href="#">
+          Перейти к заказам
+          <svg class="next-button__icon" aria-hidden="true">
+            <use xlink:href="#arrow-next" />
+          </svg>
+        </a>
       </div>
     </div>
   </form>

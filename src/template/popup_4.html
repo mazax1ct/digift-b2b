@@ -1,0 +1,57 @@
+<div class="popup-wrapper is-open">
+  <form class="popup" action="/" method="post">
+    <div class="popup__inner">
+      <div class="steps">
+        <button class="steps__button finished-step" type="button">1</button>
+        <button class="steps__button finished-step" type="button">2</button>
+        <button class="steps__button finished-step" type="button">3</button>
+        <button class="steps__button current" type="button">4</button>
+        <button class="steps__button" type="button">5</button>
+      </div>
+      <p class="popup__title">Рассылка</p>
+      <div class="tiles">
+        <div class="tiles__item tiles__item--small">
+          <a class="tile-button tile-button--var_1" href="#">
+            <svg class="tile-button__image" aria-hidden="true">
+              <use xlink:href="#download" />
+            </svg>
+            <span class="tile-button__title">Шаг 1</span>
+            <span class="tile-button__text">Скачать загруженный документ</span>
+          </a>
+        </div>
+        <div class="tiles__item tiles__item--small">
+          <a class="tile-button tile-button--var_2" href="#">
+            <svg class="tile-button__image" aria-hidden="true">
+              <use xlink:href="#download" />
+            </svg>
+            <span class="tile-button__title">Шаг 2</span>
+            <span class="tile-button__text">Скачать шаблон реестра</span>
+          </a>
+        </div>
+        <div class="tiles__item">
+          <label class="tile-button tile-button--var_3" for="upload-file">
+            <input id="upload-file" class="tile-button__input" type="file" name="upload-file">
+            <svg class="tile-button__image" aria-hidden="true">
+              <use xlink:href="#upload" />
+            </svg>
+            <span class="tile-button__title">Шаг 3</span>
+            <span class="tile-button__text">Загрузить заполненный<br> файл</span>
+          </label>
+        </div>
+      </div>
+      <div class="popup__buttons popup__buttons--2_buttons">
+        <button class="popup__button prev-button" type="button" title="Назад">
+          <svg class="prev-button__icon" aria-hidden="true">
+            <use xlink:href="#arrow-prev" />
+          </svg>
+        </button>
+        <button class="popup__button next-button" type="button">
+          Далее
+          <svg class="next-button__icon" aria-hidden="true">
+            <use xlink:href="#arrow-next" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

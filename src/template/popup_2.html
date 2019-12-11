@@ -1,0 +1,122 @@
+<div class="popup-wrapper is-open">
+  <form class="popup" action="/" method="post">
+    <div class="popup__inner">
+      <div class="steps">
+        <button class="steps__button finished-step" type="button">1</button>
+        <button class="steps__button current" type="button">2</button>
+        <button class="steps__button" type="button">3</button>
+        <button class="steps__button" type="button">4</button>
+        <button class="steps__button" type="button">5</button>
+      </div>
+      <p class="popup__title">Выберите номинал</p>
+      <div class="popup-form popup-form--pars">
+        <div class="popup-form__row">
+          <div class="popup-form__cell popup-form__cell--small">
+            <label class="input-label input-label--double_label ui-front" for="par">
+              <input id="par" class="js-input js-par input error" type="text" name="par" value="" placeholder="от 0 до 120 000" />
+              <span class="input-label__label">Номинал</span>
+              <span class="input-label__second-label">Свой номинал</span>
+            </label>
+          </div>
+          <div class="popup-form__cell popup-form__cell--small">
+            <div class="quantity-block">
+              <button class="quantity-block__button" type="button" title="Уменьшить">
+                <svg class="quantity-block__button-icon" aria-hidden="true">
+                  <use xlink:href="#minus-small" />
+                </svg>
+              </button>
+              <input class="quantity-block__input" type="text" value="1 шт" readonly>
+              <button class="quantity-block__button" type="button" title="Увеличить">
+                <svg class="quantity-block__button-icon" aria-hidden="true">
+                  <use xlink:href="#plus-small" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="popup-form__cell popup-form__cell--small">
+            <button class="delete-button" type="button">
+              Удалить
+              <svg class="delete-button__icon" aria-hidden="true">
+                <use xlink:href="#close-delete" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="popup-form__row">
+          <div class="popup-form__cell popup-form__cell--small">
+            <label class="input-label input-label--double_label ui-front" for="par">
+              <input id="par" class="js-input js-par input" type="text" name="par" value="1000 руб." placeholder="от 0 до 120 000" />
+              <span class="input-label__label">Номинал</span>
+              <span class="input-label__second-label">Свой номинал</span>
+            </label>
+          </div>
+          <div class="popup-form__cell popup-form__cell--small">
+            <div class="quantity-block">
+              <button class="quantity-block__button" type="button" title="Уменьшить">
+                <svg class="quantity-block__button-icon" aria-hidden="true">
+                  <use xlink:href="#minus-small" />
+                </svg>
+              </button>
+              <input class="quantity-block__input" type="text" value="2 шт" readonly>
+              <button class="quantity-block__button" type="button" title="Увеличить">
+                <svg class="quantity-block__button-icon" aria-hidden="true">
+                  <use xlink:href="#plus-small" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="popup-form__cell popup-form__cell--small">
+            <button class="delete-button" type="button">
+              Удалить
+              <svg class="delete-button__icon" aria-hidden="true">
+                <use xlink:href="#close-delete" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="popup-form__row">
+          <div class="popup-form__cell popup-form__cell--small">
+            <label class="input-label input-label--double_label ui-front" for="par">
+              <input id="par" class="js-input js-par input" type="text" name="par" value="" placeholder="от 0 до 120 000" />
+              <span class="input-label__label">Номинал</span>
+              <span class="input-label__second-label">Свой номинал</span>
+            </label>
+          </div>
+          <div class="popup-form__cell popup-form__cell--small">
+            <div class="quantity-block">
+              <button class="quantity-block__button" type="button" title="Уменьшить">
+                <svg class="quantity-block__button-icon" aria-hidden="true">
+                  <use xlink:href="#minus-small" />
+                </svg>
+              </button>
+              <input class="quantity-block__input" type="text" value="100 шт" readonly>
+              <button class="quantity-block__button" type="button" title="Увеличить">
+                <svg class="quantity-block__button-icon" aria-hidden="true">
+                  <use xlink:href="#plus-small" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="popup-form__cell popup-form__cell--small">
+            <button class="add-button" type="button">
+              Добавить ещё
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="popup__buttons popup__buttons--2_buttons">
+        <button class="popup__button prev-button" type="button" title="Назад">
+          <svg class="prev-button__icon" aria-hidden="true">
+            <use xlink:href="#arrow-prev" />
+          </svg>
+        </button>
+        <button class="popup__button next-button" type="button">
+          Далее
+          <svg class="next-button__icon" aria-hidden="true">
+            <use xlink:href="#arrow-next" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

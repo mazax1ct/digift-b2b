@@ -57,7 +57,12 @@
               <td class="nowrap">1 000 руб.</td>
               <td class="nowrap">200</td>
               <td>Тестовая карта</td>
-              <td><img src="images/icons/doc.svg" alt="Файл" title="Файл загружен"></td>
+              <td>
+                <div class="file-icon tooltip-holder">
+                  <img src="images/icons/doc.svg" alt="Файл">
+                  <span class="tooltip tooltip--right">Файл загружен</span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td class="table__date-cell">
@@ -77,7 +82,7 @@
               <td>100</td>
               <td>Уже готовимся презентовать в...</td>
               <td>
-                <p class="attention">! <span class="attention__tooltip">Клиент не загрузил файл с данными заказа</span></p>
+                <p class="attention tooltip-holder">! <span class="tooltip tooltip--right">Клиент не загрузил файл с данными заказа</span></p>
               </td>
             </tr>
           </table>
@@ -216,7 +221,6 @@
 
     //= template/popup.html
   </div>
-
 
   //= template/scripts.html
 </body>
