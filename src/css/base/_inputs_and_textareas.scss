@@ -328,12 +328,11 @@
 }
 
 .textarea {
-  height: 54px;
   line-height: 23px;
+  max-height: 108px;
   overflow: auto;
   padding: 15px 0 15px;
-  resize: none;
-  transition: height 0.1s;
+  resize: vertical;
 }
 
 input[type=text]::-ms-clear {

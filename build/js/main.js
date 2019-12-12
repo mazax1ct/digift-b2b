@@ -145,12 +145,11 @@ window.onload = function() {
 }
 
 //функция ресайза для textarea 54 - минимальная высота
-function adjustHeight(el){
-  el.style.height = (el.scrollHeight > el.clientHeight) ? (el.scrollHeight)+"px" : "54px";
-}
+autosize($('.textarea'));
 
 //отмена заявки, показываем поле для комментов
 $(document).on('click', '.js-show-comment', function () {
   $('.comments-block').slideDown();
+  autosize.update($('.textarea'));
   return false;
 });
