@@ -220,6 +220,10 @@
   &--pars {
     border-bottom: 1px solid rgba(#000, 0.12);
     padding-bottom: 36px;
+
+    & + .total-table {
+      margin-top: 12px;
+    }
   }
 
   &__row {
@@ -489,6 +493,7 @@
     font-size: 15px;
     font-weight: 500;
     padding-bottom: 0;
+    vertical-align: bottom;
   }
 
   &__qnt {
@@ -503,6 +508,7 @@
     font-size: 15px;
     font-weight: 500;
     padding-bottom: 0;
+    vertical-align: bottom;
   }
 
   &__precost {
@@ -511,6 +517,7 @@
     font-weight: 500;
     padding-right: 0;
     padding-bottom: 0;
+    padding-top: 24px;
   }
 }
 
@@ -521,6 +528,10 @@
   justify-content: space-between;
   margin-top: 36px;
   padding-bottom: 24px;
+
+  & + .input-label {
+    margin-top: 24px;
+  }
 
   &--top_border {
     border-top: 1px dashed rgba(#000, 0.12);
@@ -648,4 +659,9 @@
     line-height: 25px;
     text-align: center;
   }
+}
+
+.comments-block {
+  display: none;
+  padding-top: 24px;
 }

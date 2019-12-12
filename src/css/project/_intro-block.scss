@@ -19,6 +19,12 @@
     justify-content: space-between;
     margin-bottom: 24px;
     padding-bottom: 24px;
+
+    .intro-button {
+      &:last-child {
+        margin-left: auto;
+      }
+    }
   }
 
   &__links {
