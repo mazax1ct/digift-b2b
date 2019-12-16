@@ -55,9 +55,14 @@
 
   &:hover,
   &:focus {
+    .intro-button__icon-block--gradient {
+      &::before {
+        opacity: 0;
+      }
 
-    .intro-button__icon-block {
-      background-image: linear-gradient(225deg, $gradientStop, $gradientStart);
+      &::after {
+        opacity: 1;
+      }
     }
 
     .intro-button__icon-block--brand_color {
@@ -69,16 +74,41 @@
   &__icon-block {
     align-items: center;
     border-radius: 50%;
-    background-image: linear-gradient(225deg, $gradientStart, $gradientStop);
     display: flex;
     height: 48px;
     justify-content: center;
+    position: relative;
     width: 48px;
 
     &--brand_color {
       background-image: none;
       background-color: $brandcolor;
       transition: background-color 0.3s;
+    }
+
+    &--gradient {
+      &::after,
+      &::before {
+        border-radius: 50%;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: opacity 0.3s;
+        width: 100%;
+        z-index: 1
+      }
+
+      &::before {
+        background-image: linear-gradient(225deg, $gradientStart, $gradientStop);
+        opacity: 1;
+      }
+
+      &::after {
+        background-image: linear-gradient(225deg, $gradientStop, $gradientStart);
+        opacity: 0;
+      }
     }
 
     &:first-child {
@@ -93,13 +123,15 @@
   &__icon {
     fill: #fff;
     height: 24px;
+    position: relative;
     width: 24px;
+    z-index: 2;
   }
 }
 
 .intro-link {
   align-items: center;
-  border-radius: 24px;
+  border-radius: 12px;
   color: #fff;
   display: flex;
   font-weight: 500;
@@ -114,39 +146,19 @@
   &--requests {
     background-color: #44d7b6;
     color: #fff;
-
-    &:hover,
-    &:focus {
-      background-color: darken(#44d7b6, 10%);
-    }
   }
 
   &--process {
     background-color: #6236ff;
-
-    &:hover,
-    &:focus {
-      background-color: darken(#6236ff, 10%);
-    }
   }
 
   &--orders {
     background-color: #32c5ff;
-
-    &:hover,
-    &:focus {
-      background-color: darken(#32c5ff, 10%);
-    }
   }
 
   &--cancels {
     background-color: #efefef;
     color: $textcolor;
-
-    &:hover,
-    &:focus {
-      background-color: darken(#efefef, 10%);
-    }
 
     .intro-link__icon-block {
       background-color: rgba(#fff, 0.5);
@@ -164,6 +176,7 @@
     justify-content: center;
     min-width: 41px;
     left: auto;
+    padding: 8px 12px 7px 13px;
     position: absolute;
     right: 18px;
     top: 18px;
@@ -188,5 +201,35 @@
   &__title {
     display: block;
     text-align: center;
+  }
+}
+
+a.intro-link {
+  &--requests {
+    &:hover,
+    &:focus {
+      background-color: darken(#44d7b6, 10%);
+    }
+  }
+
+  &--process {
+    &:hover,
+    &:focus {
+      background-color: darken(#6236ff, 10%);
+    }
+  }
+
+  &--orders {
+    &:hover,
+    &:focus {
+      background-color: darken(#32c5ff, 10%);
+    }
+  }
+
+  &--cancels {
+    &:hover,
+    &:focus {
+      background-color: darken(#efefef, 10%);
+    }
   }
 }

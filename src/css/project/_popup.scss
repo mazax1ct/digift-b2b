@@ -3,6 +3,7 @@
   height: 100%;
   left: auto;
   opacity: 0;
+  overflow-y: auto;
   position: fixed;
   right: 0;
   top: 0;
@@ -21,11 +22,10 @@
 }
 
 .popup {
-  background-color: #fff;
-  height: calc(100% - 48px);
+  display: flex;
+  min-height: calc(100% - 24px);
   left: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   position: absolute;
   right: -744px;
   top: 24px;
@@ -33,8 +33,10 @@
   width: 720px;
 
   &__inner {
-    margin-bottom: 60px;
-    padding: 60px 72px 0;
+    background-color: #fff;
+    margin-bottom: 24px;
+    min-height: calc(100% - 24px);
+    padding: 60px 72px 60px;
 
     &--grats {
       background: url('../images/balloons.png') no-repeat 0 0 / 100% auto #fff;
@@ -138,7 +140,6 @@
     border: 1px solid #e1e1e1;
     border-radius: 50%;
     background-color: #fff;
-    cursor: pointer;
     display: flex;
     font-weight: 500;
     height: 48px;
@@ -201,11 +202,16 @@
 
     &.finished-step {
       z-index: 1;
+    }
+
+    &.finished-step,
+    &.next-aviable {
+      cursor: pointer;
 
       &:hover,
       &:focus {
-        background-color: #f5adcd;
-        border-color: #f5adcd;
+        background-color: $brandcolor;
+        border-color: $brandcolor;
         color: #fff;
       }
     }
@@ -299,22 +305,61 @@
 }
 
 .next-button {
-  background-image: linear-gradient(to left, $gradientStart, $gradientStop);
   color: #fff;
   justify-content: space-between;
   min-width: 200px;
   padding: 0 12px 0 24px;
+  position: relative;
 
   &:hover,
   &:focus {
-    background-image: linear-gradient(to left, $gradientStop, $gradientStart);
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after,
+  &::before {
+    border-radius: 6px;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s;
+    width: 100%;
+    z-index: 1
+  }
+
+  &::before {
+    background-image: linear-gradient(225deg, $gradientStart, $gradientStop);
+    opacity: 1;
+  }
+
+  &::after {
+    background-image: linear-gradient(225deg, $gradientStop, $gradientStart);
+    opacity: 0;
+  }
+
+  &__text {
+    line-height: 15px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    position: relative;
+    z-index: 2;
   }
 
   &__icon {
     fill: rgba(#fff, 0.65);
     height: 24px;
     margin-left: 16px;
+    position: relative;
     width: 24px;
+    z-index: 2;
   }
 }
 
@@ -449,8 +494,7 @@
   font-weight: 500;
   height: 54px;
   justify-content: space-between;
-  padding-left: 24px;
-  padding-right: 18px;
+  padding: 20px 25px 19px 26px;
   transition: background-color 0.3s;
   width: 100%;
 
@@ -522,7 +566,7 @@
 }
 
 .total-block {
-  border-bottom: 1px dashed rgba(#000, 0.12);
+  border-bottom: 1px dashed #b7b7b7;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -534,7 +578,7 @@
   }
 
   &--top_border {
-    border-top: 1px dashed rgba(#000, 0.12);
+    border-top: 1px dashed #b7b7b7;
     padding-top: 24px;
   }
 

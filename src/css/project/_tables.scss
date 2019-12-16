@@ -1,4 +1,5 @@
 .tables {
+  max-width: 1160px;
   margin-bottom: 24px;
   padding-left: 24px;
   padding-right: 24px;
@@ -80,8 +81,7 @@
     justify-content: center;
     margin-left: 18px;
     min-width: 30px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding: 10px 6px 9px 7px;
   }
 }
 
@@ -94,6 +94,16 @@
     &:not(:last-child) {
       td {
         border-bottom: 1px solid rgba(#979797, 0.16);
+      }
+    }
+
+    &:not(:first-child) {
+      cursor: pointer;
+      opacity: 1;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 0.65;
       }
     }
   }
@@ -219,17 +229,6 @@
     height: 24px;
     width: 24px;
   }
-}
-
-.attention {
-  align-items: center;
-  background-color: #eb2f46;
-  border-radius: 50%;
-  color: #fff;
-  display: flex;
-  height: 24px;
-  justify-content: center;
-  width: 24px;
 }
 
 .manager {

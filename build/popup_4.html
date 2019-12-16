@@ -23,6 +23,11 @@
     <symbol id="plus" viewBox="0 0 24 24">
       <path d="M12,5 C12.5522847,5 13,5.39175084 13,5.875 L13,5.875 L13,11 L18.125,11 C18.5737314,11 18.9435688,11.3860402 18.9941132,11.8833789 L19,12 C19,12.5522847 18.6082492,13 18.125,13 L18.125,13 L13,13 L13,18.125 C13,18.5737314 12.6139598,18.9435688 12.1166211,18.9941132 L12,19 C11.4477153,19 11,18.6082492 11,18.125 L11,18.125 L11,13 L5.875,13 C5.42626864,13 5.05643123,12.6139598 5.00588676,12.1166211 L5,12 C5,11.4477153 5.39175084,11 5.875,11 L5.875,11 L11,11 L11,5.875 C11,5.42626864 11.3860402,5.05643123 11.8833789,5.00588676 Z" />
     </symbol>
+    <symbol id="plus-big" viewBox="0 0 24 24">
+      <g stroke="none" stroke-width="1" fill-rule="evenodd">
+        <path d="M12,4 C12.5522847,4 13,4.44771525 13,5 L13,5 L13,11 L19,11 C19.5128358,11 19.9355072,11.3860402 19.9932723,11.8833789 L20,12 C20,12.5522847 19.5522847,13 19,13 L19,13 L13,13 L13,19 C13,19.5128358 12.6139598,19.9355072 12.1166211,19.9932723 L12,20 C11.4477153,20 11,19.5522847 11,19 L11,19 L11,13 L5,13 C4.48716416,13 4.06449284,12.6139598 4.00672773,12.1166211 L4,12 C4,11.4477153 4.44771525,11 5,11 L5,11 L11,11 L11,5 C11,4.48716416 11.3860402,4.06449284 11.8833789,4.00672773 Z" />
+      </g>
+    </symbol>
     <symbol id="burger" viewBox="0 0 25 24">
       <g>
         <path d="M21.5 17a1 1 0 0 1 0 2h-18a1 1 0 0 1 0-2h18zm0-6a1 1 0 0 1 0 2h-18a1 1 0 0 1 0-2h18zm0-6a1 1 0 0 1 0 2h-18a1 1 0 1 1 0-2h18z" />
@@ -130,7 +135,7 @@
       </div>
       <div class="sidebar__inner">
         <button class="js-popup-opener make-request" type="button">
-          Создать заявку
+          <span class="make-request__text">Создать заявку</span>
           <span class="make-request__icon-block">
             <svg class="make-request__icon" aria-hidden="true">
               <use xlink:href="#plus" />
@@ -218,7 +223,7 @@
                   <use xlink:href="#download" />
                 </svg>
                 <span class="tile-button__title">Шаг 1</span>
-                <span class="tile-button__text">Скачать загруженный документ</span>
+                <span class="tile-button__text">Скачать загруженный<br> документ</span>
               </a>
             </div>
             <div class="tiles__item tiles__item--small">
@@ -227,7 +232,7 @@
                   <use xlink:href="#download" />
                 </svg>
                 <span class="tile-button__title">Шаг 2</span>
-                <span class="tile-button__text">Скачать шаблон реестра</span>
+                <span class="tile-button__text">Скачать шаблон<br> реестра</span>
               </a>
             </div>
             <div class="tiles__item">
@@ -248,7 +253,7 @@
               </svg>
             </button>
             <button class="popup__button next-button" type="button">
-              Далее
+              <span class="next-button__text">Далее</span>
               <svg class="next-button__icon" aria-hidden="true">
                 <use xlink:href="#arrow-next" />
               </svg>

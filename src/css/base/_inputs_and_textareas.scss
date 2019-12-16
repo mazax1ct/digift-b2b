@@ -32,7 +32,7 @@
     top: 50%;
     text-overflow: ellipsis;
     transform: translateY(-50%);
-    transition: all 0.3s;
+    transition: all 0.2s;
     white-space: nowrap;
     width: 100%;
   }
@@ -59,37 +59,31 @@
   .input,
   .textarea {
     &::-webkit-input-placeholder {
-      color: rgba($textcolor, 0.5);
-      font-size: 13px;
-      font-weight: 400;
+      color: rgba($textcolor, 0.65);
       opacity: 0;
     }
 
     &::-moz-placeholder {
-      color: rgba($textcolor, 0.5);
-      font-size: 13px;
-      font-weight: 400;
+      color: rgba($textcolor, 0.65);
       opacity: 0;
     }
 
     &:-ms-input-placeholder {
-      color: rgba($textcolor, 0.5);
-      font-size: 13px;
-      font-weight: 400;
+      color: rgba($textcolor, 0.65);
       opacity: 0;
     }
 
     &.error {
       &::-webkit-input-placeholder {
-        color: rgba(#b10016, 0.5);
+        color: rgba(#b10016, 0.65);
       }
 
       &::-moz-placeholder {
-        color: rgba(#b10016, 0.5);
+        color: rgba(#b10016, 0.65);
       }
 
       &:-ms-input-placeholder {
-        color: rgba(#b10016, 0.5);
+        color: rgba(#b10016, 0.65);
       }
 
       & + .input-label__label {
