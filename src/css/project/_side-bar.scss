@@ -93,85 +93,50 @@
 
   &__bottom {
     margin-top: auto;
-    position: relative;
-    padding-top: 42px;
-    padding-left: 24px;
-    padding-right: 24px;
-
-    &::before {
-      border-top: 1px solid rgba(#7d7d7d, 0.16);
-      content: '';
-      display: block;
-      left: -24px;
-      position: absolute;
-      top: 0;
-      width: 256px;
-    }
-  }
-
-  &__phone {
-    align-items: center;
-    color: $textcolor;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 22px;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      .sidebar__phone-text {
-        border-bottom-color: currentColor
-      }
-    }
-  }
-
-  &__phone-text {
-    border-bottom: 1px dotted transparent;
-    transition: border-color 0.3s;
-  }
-
-  &__phone-icon {
-    fill: $textcolor;
-    height: 24px;
-    margin-right: 12px;
-    width: 24px;
   }
 
   &__help-button {
     align-items: center;
-    background-color: #f6f6f6;
+    background-color: #fff;
     border-radius: 6px;
     border: none;
     cursor: pointer;
     display: flex;
     font-weight: 500;
-    height: 48px;
-    justify-content: center;
-    margin-bottom: 18px;
-    padding: 0;
+    height: 54px;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 0 16px 0 22px;
     transition: background-color 0.3s;
     width: 100%;
 
     &:hover,
     &:focus {
-      background-color: darken(#f6f6f6, 10%);
+      background-color: darken(#fff, 5%);
     }
   }
 
+  &__help-button-icon {
+    fill: #000;
+    height: 20px;
+    width: 20px;
+  }
+
   &__link {
-    color: $textcolor;
+    color: rgba($textcolor, 0.7);
     display: block;
     font-size: 15px;
     line-height: 1;
     letter-spacing: 0.3px;
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: center;
+    padding-left: 22px;
     text-decoration: none;
+    transition: color 0.3s;
 
     &:hover,
     &:focus {
-      text-decoration: underline;
+      color: $textcolor;
     }
   }
 
@@ -180,13 +145,10 @@
     color: rgba($textcolor, 0.7);
     display: flex;
     font-size: 15px;
+    justify-content: space-between;
     margin-top: 18px;
-    margin-bottom: 36px;
-    justify-content: center;
-
-    img {
-      margin-left: 16px;
-    }
+    margin-bottom: 24px;
+    padding-left: 22px;
   }
 }
 
