@@ -1,20 +1,21 @@
-<div class="popup-wrapper is-open">
+<div class="popup-wrapper order">
   <form class="popup" action="/" method="post">
     <button class="js-popup-close popup__close" type="button" title="Закрыть">
       <svg class="popup__close-icon" aria-hidden="true">
         <use xlink:href="#close-delete" />
       </svg>
     </button>
-    <div class="popup__inner">
-      <div class="steps">
-        <button class="steps__button finished-step" type="button">1</button>
-        <button class="steps__button finished-step" type="button">2</button>
-        <button class="steps__button finished-step" type="button">3</button>
-        <button class="steps__button finished-step" type="button">4</button>
-        <button class="steps__button current" type="button">5</button>
+    <div class="popup__inner popup__inner--order">
+      <p class="popup__title">ООО «Ленвендо»</p>
+      <div class="popup__contacts">
+        <p class="popup__contact">Клиент: Елена</p>
+        <p class="popup__contact">lena7810@gmail.com</p>
+        <p class="popup__contact">+7 916 313-64-30</p>
       </div>
-      <p class="popup__title">Итого</p>
-      <p class="popup__order-num">По заказу №1938481</p>
+      <div class="popup__order-info">
+        <p class="popup__order-number">Заказ №3824721 от 12.04.19. Санкт-Петербург.</p>
+        <p class="popup__order-starter">Оформил: <span>Патрик Александр</span></p>
+      </div>
       <table class="total-table">
         <colgroup>
           <col width="34.6%">
@@ -42,30 +43,15 @@
       </table>
       <div class="total-block total-block--top_border">
         <div class="total-block__block">
-          <p class="total-block__title">Скидка –20%</p>
-          <p class="total-block__summ">5000 руб.</p>
-        </div>
-        <div class="total-block__block">
           <p class="total-block__title">Итоговая стоимость</p>
           <p class="total-block__summ total-block__summ--cost">20 720 руб.</p>
         </div>
       </div>
-      <label class="input-label" for="comment">
-        <textarea id="comment" class="js-input textarea" name="comment" rows="1"></textarea>
-        <span class="input-label__label">Оставить комментарий</span>
-      </label>
-      <div class="popup__buttons popup__buttons--2_buttons">
-        <button class="popup__button prev-button" type="button" title="Назад">
-          <svg class="prev-button__icon" aria-hidden="true">
-            <use xlink:href="#arrow-prev" />
-          </svg>
-        </button>
-        <button class="popup__button next-button" type="button">
-          <span class="next-button__text">Далее</span>
-          <svg class="next-button__icon" aria-hidden="true">
-            <use xlink:href="#arrow-next" />
-          </svg>
-        </button>
+      <div class="comments-block is-open">
+        <label class="input-label" for="comment">
+          <textarea id="comment" class="js-input textarea" name="comment" rows="1">You rock! 🤟</textarea>
+          <span class="input-label__label">Оставить комментарий</span>
+        </label>
       </div>
     </div>
   </form>

@@ -16,32 +16,26 @@
       <p class="popup__title">Рассылка</p>
       <div class="tiles">
         <div class="tiles__item tiles__item--small">
-          <a class="tile-button tile-button--var_1" href="#">
-            <svg class="tile-button__image" aria-hidden="true">
-              <use xlink:href="#download" />
+          <a class="tile-button tile-button--var_4" href="popup_4.html">
+            <svg class="tile-button__image tile-button__image--var_1" aria-hidden="true">
+              <use xlink:href="#send_1" />
             </svg>
-            <span class="tile-button__title">Шаг 1</span>
-            <span class="tile-button__text">Скачать загруженный<br> документ</span>
+            <span class="tile-button__text">Рассылка получателям</span>
           </a>
         </div>
         <div class="tiles__item tiles__item--small">
-          <a class="tile-button tile-button--var_2" href="#">
-            <svg class="tile-button__image" aria-hidden="true">
-              <use xlink:href="#download" />
+          <div class="js-send-to-me tile-button tile-button--var_4">
+            <svg class="tile-button__image tile-button__image--var_2" aria-hidden="true">
+              <use xlink:href="#send_2" />
             </svg>
-            <span class="tile-button__title">Шаг 2</span>
-            <span class="tile-button__text">Скачать шаблон<br> реестра</span>
-          </a>
-        </div>
-        <div class="tiles__item">
-          <label class="tile-button tile-button--var_3" for="upload-file">
-            <input id="upload-file" class="tile-button__input" type="file" name="upload-file">
-            <svg class="tile-button__image" aria-hidden="true">
-              <use xlink:href="#upload" />
-            </svg>
-            <span class="tile-button__title">Шаг 3</span>
-            <span class="tile-button__text">Загрузить заполненный<br> файл</span>
-          </label>
+            <span class="tile-button__text">Отправить мне на email</span>
+            <div class="tile-button__hidden-block">
+              <label class="input-label" for="order_num">
+                <input id="order_num" class="js-input input editable" type="text" name="order_num" value="hello@sorokins.me" />
+                <span class="input-label__label">Email</span>
+              </label>
+            </div>
+          </div>
         </div>
       </div>
       <div class="popup__buttons popup__buttons--2_buttons">

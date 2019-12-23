@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Попап - шаг 5</title>
+  <title>Попап - шаг 3</title>
 
   <meta name="description" content="">
 
@@ -229,12 +229,15 @@
           <div class="steps">
             <button class="steps__button finished-step" type="button">1</button>
             <button class="steps__button finished-step" type="button">2</button>
-            <button class="steps__button finished-step" type="button">3</button>
-            <button class="steps__button finished-step" type="button">4</button>
-            <button class="steps__button current" type="button">5</button>
+            <button class="steps__button current" type="button">3</button>
+            <button class="steps__button" type="button">4</button>
+            <button class="steps__button" type="button">5</button>
           </div>
-          <p class="popup__title">Итого</p>
-          <p class="popup__order-num">По заказу №1938481</p>
+          <p class="popup__title">ООО «Бренд одежды фешн стайл дизайн»</p>
+          <div class="popup__contacts">
+            <p class="popup__contact">Валерий</p>
+            <p class="popup__contact">hello@mail.ru</p>
+          </div>
           <table class="total-table">
             <colgroup>
               <col width="34.6%">
@@ -247,44 +250,68 @@
               <th class="total-table__th">Cтоимость</th>
             </tr>
             <tr>
-              <td class="total-table__td">1 500 руб.</td>
-              <td class="total-table__td">17</td>
-              <td class="total-table__td">25 500 руб.</td>
+              <td class="total-table__td">500 руб.</td>
+              <td class="total-table__td">6</td>
+              <td class="total-table__td">3 000 руб.</td>
+            </tr>
+            <tr>
+              <td class="total-table__td">1 000 руб.</td>
+              <td class="total-table__td">3</td>
+              <td class="total-table__td">2 900 руб.</td>
+            </tr>
+            <tr>
+              <td class="total-table__td">2 000 руб.</td>
+              <td class="total-table__td">1</td>
+              <td class="total-table__td">2 000 руб.</td>
+            </tr>
+            <tr>
+              <td class="total-table__td">10 000 руб.</td>
+              <td class="total-table__td">2</td>
+              <td class="total-table__td">20 000 руб.</td>
             </tr>
             <tr>
               <td class="total-table__td total-table__qnt-title" colspan="2">Итого количество</td>
-              <td class="total-table__td total-table__qnt">17</td>
+              <td class="total-table__td total-table__qnt">12</td>
             </tr>
             <tr>
               <td class="total-table__td total-table__precost-title" colspan="2">Предварительная стоимость</td>
-              <td class="total-table__td total-table__precost">25 500 руб.</td>
+              <td class="total-table__td total-table__precost">25 900 руб.</td>
             </tr>
           </table>
-          <div class="total-block total-block--top_border">
-            <div class="total-block__block">
-              <p class="total-block__title">Скидка –20%</p>
-              <p class="total-block__summ">5000 руб.</p>
+          <div class="popup-form2">
+            <div class="popup-form2__row popup-form2__row--2_cell">
+              <div class="popup-form2__cell">
+                <label class="input-label input-label--big_text" for="order_num">
+                  <input id="order_num" class="js-input input editable" type="text" name="order_num" value="" />
+                  <span class="input-label__label">Номер заказа</span>
+                </label>
+              </div>
+              <div class="popup-form2__cell">
+                <label class="input-label input-label--big_text" for="discount">
+                  <input id="discount" class="js-input input valid" type="text" name="discount" value="Скидка -20%" />
+                  <span class="input-label__label">Ввести скидку</span>
+                </label>
+              </div>
             </div>
+          </div>
+          <div class="total-block">
             <div class="total-block__block">
               <p class="total-block__title">Итоговая стоимость</p>
               <p class="total-block__summ total-block__summ--cost">20 720 руб.</p>
             </div>
           </div>
-          <label class="input-label" for="comment">
-            <textarea id="comment" class="js-input textarea" name="comment" rows="1"></textarea>
-            <span class="input-label__label">Оставить комментарий</span>
-          </label>
+          <div class="comments-block is-open">
+            <label class="input-label" for="comment">
+              <textarea id="comment" class="js-input textarea" name="comment" rows="1">Отменяю. Вот такое у меня настроение 🙃</textarea>
+              <span class="input-label__label">Оставить комментарий</span>
+            </label>
+          </div>
           <div class="popup__buttons popup__buttons--2_buttons">
-            <button class="popup__button prev-button" type="button" title="Назад">
-              <svg class="prev-button__icon" aria-hidden="true">
-                <use xlink:href="#arrow-prev" />
-              </svg>
+            <button class="back-button" type="button">
+              Назад
             </button>
-            <button class="popup__button next-button" type="button">
-              <span class="next-button__text">Далее</span>
-              <svg class="next-button__icon" aria-hidden="true">
-                <use xlink:href="#arrow-next" />
-              </svg>
+            <button class="popup__button decline-button" type="button">
+              Подтвердить отмену
             </button>
           </div>
         </div>

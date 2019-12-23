@@ -60,7 +60,24 @@ $(document).on('click', '.js-popup-opener', function () {
   return false;
 });
 
-//функция закрытия сайдбара
+$(document).on('click', '.js-order-popup', function () {
+  $('body').addClass('overflow');
+  $('.popup-wrapper.order').addClass('is-open');
+  document.addEventListener('click', closePopup);
+  document.addEventListener('keydown', onPopupEscPress);
+  return false;
+});
+
+//закрытие попапа
+$(document).on('click', '.js-popup-close', function () {
+  $('body').removeClass('overflow');
+  $('.popup-wrapper').removeClass('is-open');
+  document.removeEventListener('click', closePopup);
+  document.removeEventListener('keydown', onPopupEscPress);
+  return false;
+});
+
+//функция закрытия попапа
 function closePopup(evt) {
   if (!$('.popup').is(evt.target) && $('.popup').has(evt.target).length === 0) {
     $('.popup-wrapper').removeClass('is-open');
@@ -151,5 +168,12 @@ autosize($('.textarea'));
 $(document).on('click', '.js-show-comment', function () {
   $('.comments-block').slideDown();
   autosize.update($('.textarea'));
+  return false;
+});
+
+//выбор рассылки "Отправить мне на email"
+$(document).on('click', '.js-send-to-me', function () {
+  $(this).addClass('is-open');
+  $(this).find('.tile-button__hidden-block').slideDown();
   return false;
 });
