@@ -77,5 +77,14 @@
     }
   }
 
+  &--bottom {
+    bottom: -46px;
+    top: auto;
 
+    &::after {
+      bottom: auto;
+      border-radius: 8px 8px 0 0;
+      top: -3px;
+    }
+  }
 }

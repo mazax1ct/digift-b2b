@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Попап - шаг 5</title>
+  <title>Попап - шаг 4</title>
 
   <meta name="description" content="">
 
@@ -234,62 +234,64 @@
             <button class="steps__button finished-step" type="button">1</button>
             <button class="steps__button finished-step" type="button">2</button>
             <button class="steps__button finished-step" type="button">3</button>
-            <button class="steps__button finished-step" type="button">4</button>
-            <button class="steps__button current" type="button">5</button>
+            <button class="steps__button current" type="button">4</button>
+            <button class="steps__button" type="button">5</button>
           </div>
-          <p class="popup__title">Итого</p>
-          <p class="popup__order-num">По заказу №1938481</p>
-          <table class="total-table">
-            <colgroup>
-              <col width="34.6%">
-              <col width="45%">
-              <col>
-            </colgroup>
-            <tr>
-              <th class="total-table__th">Номинал</th>
-              <th class="total-table__th">Кол-во</th>
-              <th class="total-table__th">Cтоимость</th>
-            </tr>
-            <tr>
-              <td class="total-table__td">1 500 руб.</td>
-              <td class="total-table__td">17</td>
-              <td class="total-table__td">25 500 руб.</td>
-            </tr>
-            <tr>
-              <td class="total-table__td total-table__qnt-title" colspan="2">Итого количество</td>
-              <td class="total-table__td total-table__qnt">17</td>
-            </tr>
-            <tr>
-              <td class="total-table__td total-table__precost-title" colspan="2">Предварительная стоимость</td>
-              <td class="total-table__td total-table__precost">25 500 руб.</td>
-            </tr>
-          </table>
-          <div class="total-block total-block--top_border">
-            <div class="total-block__block">
-              <p class="total-block__title">Скидка –20%</p>
-              <p class="total-block__summ">5000 руб.</p>
+          <p class="popup__title">Рассылка</p>
+          <div class="tiles">
+            <div class="tiles__item tiles__item--small">
+              <a class="tile-button tile-button--var_1" href="#">
+                <svg class="tile-button__image" aria-hidden="true">
+                  <use xlink:href="#download" />
+                </svg>
+                <span class="tile-button__title">Шаг 1</span>
+                <span class="tile-button__text">Скачать загруженный<br> документ</span>
+              </a>
             </div>
-            <div class="total-block__block">
-              <p class="total-block__title">Итоговая стоимость</p>
-              <p class="total-block__summ total-block__summ--cost">20 720 руб.</p>
+            <div class="tiles__item tiles__item--small">
+              <a class="tile-button tile-button--var_2" href="#">
+                <svg class="tile-button__image" aria-hidden="true">
+                  <use xlink:href="#download" />
+                </svg>
+                <span class="tile-button__title">Шаг 2</span>
+                <span class="tile-button__text">Скачать шаблон<br> реестра</span>
+              </a>
+            </div>
+            <div class="tiles__item">
+              <div class="tiles__button-block tooltip-holder">
+                <button class="attach-delete" type="button">
+                  <svg class="attach-delete__icon" aria-hidden="true">
+                    <use xlink:href="#close-delete" />
+                  </svg>
+                </button>
+                <span class="tooltip tooltip--bottom">Удалить файл</span>
+              </div>
+              <label class="tile-button tile-button--var_3" for="upload-file">
+                <span class="tile-button__attach">
+                  <svg class="tile-button__attach-icon" aria-hidden="true">
+                    <use xlink:href="#attach" />
+                  </svg>
+                </span>
+                <input id="upload-file" class="tile-button__input" type="file" name="upload-file">
+                <svg class="tile-button__image" aria-hidden="true">
+                  <use xlink:href="#upload" />
+                </svg>
+                <span class="tile-button__title">Шаг 3</span>
+                <span class="tile-button__text">Загрузить заполненный<br> файл</span>
+              </label>
             </div>
           </div>
-          <label class="input-label" for="comment">
-            <textarea id="comment" class="js-input textarea" name="comment" rows="1"></textarea>
-            <span class="input-label__label">Оставить комментарий</span>
-          </label>
-          <div class="popup__buttons popup__buttons--2_buttons">
-            <button class="popup__button prev-button" type="button" title="Назад">
-              <svg class="prev-button__icon" aria-hidden="true">
-                <use xlink:href="#arrow-prev" />
-              </svg>
-            </button>
-            <button class="popup__button next-button" type="button">
-              <span class="next-button__text">Далее</span>
-              <svg class="next-button__icon" aria-hidden="true">
-                <use xlink:href="#arrow-next" />
-              </svg>
-            </button>
+          <div class="file-errors">
+            <p class="file-errors__title">Ошибки в файле</p>
+            <p class="file-errors__qnt">Всего ошибок: 12</p>
+            <p class="file-errors__error">Ошибка в стороке 141 - поле email - недопустимый символ</p>
+            <p class="file-errors__error">Ошибка в стороке 142 - поле номинал - недопостимый номинал</p>
+            <p class="file-errors__error">Ошибка в строке 143 - поле номинал - так может выглядеть вариант многострочной ошибки</p>
+            <p class="file-errors__error">Ошибка в стороке 141 - поле email - недопустимый символ</p>
+            <p class="file-errors__error">Ошибка в стороке 142 - поле номинал - недопостимый номинал</p>
+            <div class="file-errors__button-block">
+              <a class="see-all-button" href="#">Посмотреть все</a>
+            </div>
           </div>
         </div>
       </form>
