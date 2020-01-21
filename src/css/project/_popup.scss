@@ -891,6 +891,10 @@
       fill: #02b0f4;
     }
 
+    .tile-button__attach {
+      background-color: #02b0f4;
+    }
+
     &:hover,
     &:focus {
       background-color: rgba(#02b0f4, 0.2);
@@ -902,6 +906,10 @@
 
     .tile-button__image {
       fill: #ed028d;
+    }
+
+    .tile-button__attach {
+      background-color: #ed028d;
     }
 
     &:hover,
