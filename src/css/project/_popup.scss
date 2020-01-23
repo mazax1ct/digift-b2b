@@ -443,6 +443,10 @@
   margin-right: -48px;
   padding: 36px 48px;
 
+  & + .popup-form {
+    margin-top: 36px;
+  }
+
   &--no_background {
     background-color: transparent;
   }
@@ -859,6 +863,7 @@
   margin-bottom: -6px;
 
   &__item {
+    display: flex;
     margin-bottom: 6px;
     padding-left: 3px;
     padding-right: 3px;
@@ -889,12 +894,13 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  //justify-content: center;
   min-height: 182px;
   padding: 30px 24px;
   position: relative;
   transition: background-color 0.3s;
   text-decoration: none;
+  width: 100%;
 
   &--var_1 {
     background-color: rgba(#02b0f4, 0.1);
