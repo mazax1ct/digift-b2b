@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Попап - шаг 1</title>
+  <title>Создать заявку_клиент</title>
 
   <meta name="description" content="">
 
@@ -194,30 +194,59 @@
     </div>
 
     <main class="content">
-      <div class="tables">
-        <div class="table-wrapper table-wrapper--empty table-wrapper--requests">
-          <p class="table-title table-title--requests">
-            Новые заявки
-            <span class="table-title__counter">0</span>
-          </p>
+      <div class="intro-block">
+        <h1 class="intro-block__title">Заказы</h1>
+        <div class="intro-block__buttons">
+          <button class="js-popup-opener intro-button" type="button">
+            <span>Создать заявку</span>
+            <span class="intro-button__icon-block intro-button__icon-block--gradient">
+              <svg class="intro-button__icon" aria-hidden="true">
+                <use xlink:href="#plus-big" />
+              </svg>
+            </span>
+          </button>
         </div>
-        <div class="table-wrapper table-wrapper--empty">
-          <p class="table-title table-title--process">
-            Оформление заказа (Digift)
-            <span class="table-title__counter">0</span>
-          </p>
-        </div>
-        <div class="table-wrapper table-wrapper--empty">
-          <p class="table-title table-title--orders">
-            Завершенные заказы
-            <span class="table-title__counter">0</span>
-          </p>
-        </div>
-        <div class="table-wrapper table-wrapper--empty">
-          <p class="table-title table-title--cancels">
-            Отмененные заявки
-            <span class="table-title__counter">0</span>
-          </p>
+        <div class="intro-block__links">
+          <div class="intro-block__link">
+            <div class="intro-link intro-link--requests">
+              <span class="intro-link__icon-block">
+                <svg class="intro-link__icon" aria-hidden="true">
+                  <use xlink:href="#requests-icon" />
+                </svg>
+              </span>
+              <span class="intro-link__title">Заявок нет</span>
+            </div>
+          </div>
+          <div class="intro-block__link">
+            <div class="intro-link intro-link--process">
+              <span class="intro-link__icon-block">
+                <svg class="intro-link__icon" aria-hidden="true">
+                  <use xlink:href="#process-icon" />
+                </svg>
+              </span>
+              <span class="intro-link__title">Заявок нет</span>
+            </div>
+          </div>
+          <div class="intro-block__link">
+            <div class="intro-link intro-link--orders">
+              <span class="intro-link__icon-block">
+                <svg class="intro-link__icon" aria-hidden="true">
+                  <use xlink:href="#order-icon" />
+                </svg>
+              </span>
+              <span class="intro-link__title">Заказов нет</span>
+            </div>
+          </div>
+          <div class="intro-block__link">
+            <div class="intro-link intro-link--cancels">
+              <span class="intro-link__icon-block">
+                <svg class="intro-link__icon" aria-hidden="true">
+                  <use xlink:href="#cancel-icon" />
+                </svg>
+              </span>
+              <span class="intro-link__title">Отмен нет</span>
+            </div>
+          </div>
         </div>
       </div>
     </main>

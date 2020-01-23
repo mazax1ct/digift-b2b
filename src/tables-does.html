@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Таблицы</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  <div class="wrapper">
+    //= template/header.html
+
+    //= template/side-bar.html
+
+    <main class="content">
+      <div class="tables">
+        <div class="table-wrapper">
+          <p class="table-title table-title--orders">
+            Завершенные заказы
+            <span class="table-title__counter">29</span>
+          </p>
+          <table class="table">
+            <tr>
+              <th class="table__date-cell">Дата</th>
+              <th class="table__company-cell">Юр. лицо</th>
+              <th>Номер</th>
+              <th class="table__cost-cell">Стоимость</th>
+              <th class="table__manager-cell">Менеджер</th>
+              <th class="table__comment-cell">Комментарий</th>
+            </tr>
+            <tr>
+              <td class="table__date-cell">29.08.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «Пуфики РФ»</span></td>
+              <td class="js-order-popup">07247225</td>
+              <td class="table__cost-cell">1 500 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_4">К</span>
+                  Куприянов В.В.
+                </p>
+              </td>
+              <td class="table__comment-cell">Проверил, оформил</td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">23.08.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «СтеклаПовсюду»</span></td>
+              <td class="js-order-popup">92975251</td>
+              <td class="table__cost-cell">3 900 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_5">М</span>
+                  Мельников Н.А.
+                </p>
+              </td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    //= template/popup_order_info.html
+  </div>
+
+  //= template/scripts.html
+</body>
+
+</html>
