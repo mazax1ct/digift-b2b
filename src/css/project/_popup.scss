@@ -197,7 +197,11 @@
     font-size: 18px;
     line-height: 1;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     span {
       font-weight: 500;
@@ -429,11 +433,19 @@
   color: $brandcolor;
 }
 
+.popup__title + .popup-form2--no_background {
+  padding-top: 0;
+}
+
 .popup-form2 {
   background-color: #f7f7f7;
   margin-left: -48px;
   margin-right: -48px;
   padding: 36px 48px;
+
+  &--no_background {
+    background-color: transparent;
+  }
 
   &__title {
     font-size: 20px;

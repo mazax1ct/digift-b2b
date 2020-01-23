@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Создать заявку_рассылка</title>
+  <title>Таблицы</title>
 
   <meta name="description" content="">
 
@@ -195,130 +195,257 @@
 
     <main class="content">
       <div class="tables">
-        <div class="table-wrapper table-wrapper--empty table-wrapper--requests">
+        <div class="table-wrapper table-wrapper--requests">
           <p class="table-title table-title--requests">
             Новые заявки
-            <span class="table-title__counter">0</span>
+            <span class="table-title__counter">2</span>
           </p>
+          <table class="table">
+            <tr>
+              <th class="table__date-cell">Дата</th>
+              <th>Город</th>
+              <th>Юр. лицо</th>
+              <th>Стоимость</th>
+              <th>Кол-во</th>
+              <th>Комментарий</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="table__date-cell">
+                19.09.19
+                <span class="table__time">13:45</span>
+              </td>
+              <td>Санкт-Петербург</td>
+              <td>
+                <span class="table__company">ООО «Бренд одежды фешн дизайн»</span>
+                <div class="table__buttons">
+                  <button class="table__button" type="button">Александр</button>
+                  <button class="table__button" type="button">+7 (916) 313-64-30</button>
+                  <button class="table__button" type="button">hello@sorokins.me</button>
+                </div>
+              </td>
+              <td class="nowrap">1 000 руб.</td>
+              <td class="nowrap">200</td>
+              <td>Тестовая карта</td>
+              <td class="table__file-cell">
+                <div class="file-icon tooltip-holder">
+                  <img src="images/icons/attach.svg" alt="Файл">
+                  <span class="tooltip tooltip--right">Файл загружен</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">
+                18.09.19
+                <span class="table__time">20:16</span>
+              </td>
+              <td>Екатеринбург</td>
+              <td>
+                <span class="table__company">ООО «Ленвендо»</span>
+                <div class="table__buttons">
+                  <button class="table__button" type="button">Ева</button>
+                  <button class="table__button" type="button">+7 800 824-20-11</button>
+                  <button class="table__button" type="button">hello@mail.ru</button>
+                </div>
+              </td>
+              <td class="nowrap">5 000 руб.</td>
+              <td>100</td>
+              <td>Уже готовимся презентовать в...</td>
+              <td class="table__file-cell">
+                <p class="tooltip-holder">
+                  <img src="images/icons/warn.svg" alt="Файл отсутствует">
+                  <span class="tooltip tooltip--right">Клиент не загрузил файл с данными заказа</span>
+                </p>
+              </td>
+            </tr>
+          </table>
         </div>
-        <div class="table-wrapper table-wrapper--empty">
+        <div class="table-wrapper">
           <p class="table-title table-title--process">
             Оформление заказа (Digift)
-            <span class="table-title__counter">0</span>
+            <span class="table-title__counter">1</span>
           </p>
+          <table class="table">
+            <tr>
+              <th class="table__date-cell">Дата</th>
+              <th class="table__company-cell">Юр. лицо</th>
+              <th>Номер</th>
+              <th class="table__cost-cell">Стоимость</th>
+              <th class="table__manager-cell">Менеджер</th>
+              <th class="table__comment-cell">Комментарий</th>
+            </tr>
+            <tr>
+              <td class="table__date-cell">19.09.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «РокетБанк»</span></td>
+              <td class="js-order-popup">72487194</td>
+              <td class="table__cost-cell">1 000 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_1">Б</span>
+                  Богданова Е.О.
+                </p>
+              </td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">11.08.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «Бренд одежды фешн стайл дизайн»</span></td>
+              <td class="js-order-popup">08149134</td>
+              <td class="table__cost-cell">5 000 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_2">К</span>
+                  Красильников М.В.
+                </p>
+              </td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">24.07.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «ЮиксЛайв»</span></td>
+              <td class="js-order-popup">20825285</td>
+              <td class="table__cost-cell">20 000 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_3">Р</span>
+                  Райкин А.О.
+                </p>
+              </td>
+              <td class="table__comment-cell">Все ок 👌🏻</td>
+            </tr>
+          </table>
         </div>
-        <div class="table-wrapper table-wrapper--empty">
+        <div class="table-wrapper">
           <p class="table-title table-title--orders">
             Завершенные заказы
-            <span class="table-title__counter">0</span>
+            <span class="table-title__counter">29</span>
           </p>
+          <table class="table">
+            <tr>
+              <th class="table__date-cell">Дата</th>
+              <th class="table__company-cell">Юр. лицо</th>
+              <th>Номер</th>
+              <th class="table__cost-cell">Стоимость</th>
+              <th class="table__manager-cell">Менеджер</th>
+              <th class="table__comment-cell">Комментарий</th>
+            </tr>
+            <tr>
+              <td class="table__date-cell">29.08.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «Пуфики РФ»</span></td>
+              <td class="js-order-popup">07247225</td>
+              <td class="table__cost-cell">1 500 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_4">К</span>
+                  Куприянов В.В.
+                </p>
+              </td>
+              <td class="table__comment-cell">Проверил, оформил</td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">23.08.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «СтеклаПовсюду»</span></td>
+              <td class="js-order-popup">92975251</td>
+              <td class="table__cost-cell">3 900 руб.</td>
+              <td class="table__manager-cell">
+                <p class="manager">
+                  <span class="manager__icon bg_5">М</span>
+                  Мельников Н.А.
+                </p>
+              </td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+          </table>
         </div>
-        <div class="table-wrapper table-wrapper--empty">
+        <div class="table-wrapper">
           <p class="table-title table-title--cancels">
             Отмененные заявки
-            <span class="table-title__counter">0</span>
+            <span class="table-title__counter">210</span>
           </p>
+          <table class="table">
+            <tr>
+              <th class="table__date-cell">Дата</th>
+              <th class="table__company-cell">Юр. лицо</th>
+              <th>Номер</th>
+              <th class="table__cost-cell">Стоимость</th>
+              <th class="table__manager-cell"></th>
+              <th class="table__comment-cell">Комментарий</th>
+            </tr>
+            <tr>
+              <td class="table__date-cell">01.02.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «Космополитан»</span></td>
+              <td class="js-order-popup">98247257</td>
+              <td class="table__cost-cell">10 500 руб.</td>
+              <td class="table__manager-cell"></td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">30.01.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «Витязи Здесь»</span></td>
+              <td class="js-order-popup">27892455</td>
+              <td class="table__cost-cell">7 000 руб.</td>
+              <td class="table__manager-cell"></td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+          </table>
         </div>
       </div>
     </main>
 
-    <div class="popup-wrapper is-open">
+    <div class="popup-wrapper order">
       <form class="popup" action="/" method="post">
         <button class="js-popup-close popup__close" type="button" title="Закрыть">
           <svg class="popup__close-icon" aria-hidden="true">
             <use xlink:href="#close-delete" />
           </svg>
         </button>
-        <div class="popup__inner">
-          <div class="steps">
-            <button class="steps__button finished-step" type="button">1</button>
-            <button class="steps__button finished-step" type="button">2</button>
-            <button class="steps__button finished-step" type="button">3</button>
-            <button class="steps__button current" type="button">4</button>
-            <button class="steps__button" type="button">5</button>
+        <div class="popup__inner popup__inner--order">
+          <p class="popup__title">ООО «Ленвендо»</p>
+          <div class="popup__contacts">
+            <p class="popup__contact">Клиент: Елена</p>
+            <p class="popup__contact">lena7810@gmail.com</p>
+            <p class="popup__contact">+7 916 313-64-30</p>
           </div>
-          <p class="popup__title">Рассылка</p>
-          <div class="popup-form2 popup-form2--no_background">
-            <div class="popup-form2__row popup-form2__row--2_cell">
-              <div class="popup-form2__cell">
-                <label class="input-label input-label--big_text" for="order_num">
-                  <input id="order_num" class="js-input input editable" type="text" name="order_num" value="" />
-                  <span class="input-label__label">Номер заказа</span>
-                </label>
-              </div>
-              <div class="popup-form2__cell">
-                <label class="input-label input-label--big_text" for="discount">
-                  <input id="discount" class="js-input input valid" type="text" name="discount" value="Скидка -20%" />
-                  <span class="input-label__label">Ввести скидку</span>
-                </label>
-              </div>
-            </div>
+          <div class="popup__order-info">
+            <p class="popup__order-number">Заказ №3824721 от 12.04.19. Санкт-Петербург.</p>
+            <p class="popup__order-starter">Оформил: <span>Патрик Александр</span></p>
           </div>
-          <div class="tiles">
-            <div class="tiles__item tiles__item--small">
-              <a class="tile-button tile-button--var_1" href="#">
-                <span class="tile-button__attach">
-                  <svg class="tile-button__attach-icon" aria-hidden="true">
-                    <use xlink:href="#attach" />
-                  </svg>
-                </span>
-                <svg class="tile-button__image" aria-hidden="true">
-                  <use xlink:href="#download" />
-                </svg>
-                <span class="tile-button__title">Шаг 1</span>
-                <span class="tile-button__text">Скачать загруженный<br> документ</span>
-              </a>
-            </div>
-            <div class="tiles__item tiles__item--small">
-              <a class="tile-button tile-button--var_2" href="#">
-                <span class="tile-button__attach">
-                  <svg class="tile-button__attach-icon" aria-hidden="true">
-                    <use xlink:href="#attach" />
-                  </svg>
-                </span>
-                <svg class="tile-button__image" aria-hidden="true">
-                  <use xlink:href="#download" />
-                </svg>
-                <span class="tile-button__title">Шаг 2</span>
-                <span class="tile-button__text">Скачать шаблон<br> реестра</span>
-              </a>
-            </div>
-            <div class="tiles__item">
-              <div class="tiles__button-block tooltip-holder">
-                <button class="attach-delete" type="button">
-                  <svg class="attach-delete__icon" aria-hidden="true">
-                    <use xlink:href="#close-delete" />
-                  </svg>
-                </button>
-                <span class="tooltip tooltip--bottom">Удалить файл</span>
-              </div>
-              <label class="tile-button tile-button--var_3" for="upload-file">
-                <span class="tile-button__attach">
-                  <svg class="tile-button__attach-icon" aria-hidden="true">
-                    <use xlink:href="#attach" />
-                  </svg>
-                </span>
-                <input id="upload-file" class="tile-button__input" type="file" name="upload-file">
-                <svg class="tile-button__image" aria-hidden="true">
-                  <use xlink:href="#upload" />
-                </svg>
-                <span class="tile-button__title">Шаг 3</span>
-                <span class="tile-button__text">Загрузить заполненный<br> файл</span>
-              </label>
+          <table class="total-table">
+            <colgroup>
+              <col width="34.6%">
+              <col width="45%">
+              <col>
+            </colgroup>
+            <tr>
+              <th class="total-table__th">Номинал</th>
+              <th class="total-table__th">Кол-во</th>
+              <th class="total-table__th">Cтоимость</th>
+            </tr>
+            <tr>
+              <td class="total-table__td">1 500 руб.</td>
+              <td class="total-table__td">17</td>
+              <td class="total-table__td">25 500 руб.</td>
+            </tr>
+            <tr>
+              <td class="total-table__td total-table__qnt-title" colspan="2">Итого количество</td>
+              <td class="total-table__td total-table__qnt">17</td>
+            </tr>
+            <tr>
+              <td class="total-table__td total-table__precost-title" colspan="2">Предварительная стоимость</td>
+              <td class="total-table__td total-table__precost">25 500 руб.</td>
+            </tr>
+          </table>
+          <div class="total-block total-block--top_border">
+            <div class="total-block__block">
+              <p class="total-block__title">Итоговая стоимость</p>
+              <p class="total-block__summ total-block__summ--cost">20 720 руб.</p>
             </div>
           </div>
-          <div class="popup__buttons popup__buttons--2_buttons">
-            <button class="popup__button prev-button" type="button" title="Назад">
-              <svg class="prev-button__icon" aria-hidden="true">
-                <use xlink:href="#arrow-prev" />
-              </svg>
-            </button>
-            <button class="popup__button next-button" type="button">
-              <span class="next-button__text">Далее</span>
-              <svg class="next-button__icon" aria-hidden="true">
-                <use xlink:href="#arrow-next" />
-              </svg>
-            </button>
+          <div class="comments-block is-open">
+            <label class="input-label" for="comment">
+              <textarea id="comment" class="js-input textarea" name="comment" rows="1">You rock! 🤟</textarea>
+              <span class="input-label__label">Оставить комментарий</span>
+            </label>
           </div>
         </div>
       </form>

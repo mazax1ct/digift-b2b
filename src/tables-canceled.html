@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Отмененные заявки</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  <div class="wrapper">
+    //= template/header.html
+
+    //= template/side-bar.html
+
+    <main class="content">
+      <div class="tables">
+        <div class="table-wrapper">
+          <p class="table-title table-title--cancels">
+            Отмененные заявки
+            <span class="table-title__counter">210</span>
+          </p>
+          <table class="table">
+            <tr>
+              <th class="table__date-cell">Дата</th>
+              <th class="table__company-cell">Юр. лицо</th>
+              <th>Номер</th>
+              <th class="table__cost-cell">Стоимость</th>
+              <th class="table__manager-cell"></th>
+              <th class="table__comment-cell">Комментарий</th>
+            </tr>
+            <tr>
+              <td class="table__date-cell">01.02.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «Космополитан»</span></td>
+              <td class="js-order-popup">98247257</td>
+              <td class="table__cost-cell">10 500 руб.</td>
+              <td class="table__manager-cell"></td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">30.01.19</td>
+              <td class="table__company-cell"><span class="table__company">ООО «Витязи Здесь»</span></td>
+              <td class="js-order-popup">27892455</td>
+              <td class="table__cost-cell">7 000 руб.</td>
+              <td class="table__manager-cell"></td>
+              <td class="table__comment-cell"><span class="empty-comment">—</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    //= template/popup_order_info.html
+  </div>
+
+  //= template/scripts.html
+</body>
+
+</html>

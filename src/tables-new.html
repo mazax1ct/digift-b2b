@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>Таблицы</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/sprite.html
+
+  <div class="wrapper">
+    //= template/header.html
+
+    //= template/side-bar.html
+
+    <main class="content">
+      <div class="tables">
+        <div class="table-wrapper table-wrapper--requests">
+          <p class="table-title table-title--requests">
+            Новые заявки
+            <span class="table-title__counter">2</span>
+          </p>
+          <table class="table">
+            <tr>
+              <th class="table__date-cell">Дата</th>
+              <th>Город</th>
+              <th>Юр. лицо</th>
+              <th>Стоимость</th>
+              <th>Кол-во</th>
+              <th>Комментарий</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="table__date-cell">
+                19.09.19
+                <span class="table__time">13:45</span>
+              </td>
+              <td>Санкт-Петербург</td>
+              <td>
+                <span class="table__company">ООО «Бренд одежды фешн дизайн»</span>
+                <div class="table__buttons">
+                  <button class="table__button" type="button">Александр</button>
+                  <button class="table__button" type="button">+7 (916) 313-64-30</button>
+                  <button class="table__button" type="button">hello@sorokins.me</button>
+                </div>
+              </td>
+              <td class="nowrap">1 000 руб.</td>
+              <td class="nowrap">200</td>
+              <td>Тестовая карта</td>
+              <td class="table__file-cell">
+                <div class="file-icon tooltip-holder">
+                  <img src="images/icons/attach.svg" alt="Файл">
+                  <span class="tooltip tooltip--right">Файл загружен</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__date-cell">
+                18.09.19
+                <span class="table__time">20:16</span>
+              </td>
+              <td>Екатеринбург</td>
+              <td>
+                <span class="table__company">ООО «Ленвендо»</span>
+                <div class="table__buttons">
+                  <button class="table__button" type="button">Ева</button>
+                  <button class="table__button" type="button">+7 800 824-20-11</button>
+                  <button class="table__button" type="button">hello@mail.ru</button>
+                </div>
+              </td>
+              <td class="nowrap">5 000 руб.</td>
+              <td>100</td>
+              <td>Уже готовимся презентовать в...</td>
+              <td class="table__file-cell">
+                <p class="tooltip-holder">
+                  <img src="images/icons/warn.svg" alt="Файл отсутствует">
+                  <span class="tooltip tooltip--right">Клиент не загрузил файл с данными заказа</span>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    //= template/popup_order_info.html
+  </div>
+
+  //= template/scripts.html
+</body>
+
+</html>
